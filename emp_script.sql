@@ -4,9 +4,12 @@
 
 -- how to create a database 
 create database if not exists ravi_db;
+-- use database ravi_db
+use database ravi_db;
 -- how to create schema 
 create schema if not exists ravi_schema;
-
+-- use schema ravi_schema
+use schema ravi_schema;
 -- drop emp table if exists
 DROP TABLE IF EXISTS emp;
 -- drop dept table if exists
@@ -36,5 +39,3 @@ INSERT INTO DEPT VALUES (10,'ACCOUNTING','NEW YORK'),
 (20,'RESEARCH','DALLAS'),
 (30,'SALES','CHICAGO'),
 (40,'OPERATIONS','BOSTON');
-
-
