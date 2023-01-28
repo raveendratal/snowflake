@@ -1,7 +1,21 @@
+
+-- single line comment this is my first comment
+/* multi line comments */
+
+-- how to create a database 
+create database if not exists ravi_db;
+-- how to create schema 
+create schema if not exists ravi_schema;
+
+-- drop emp table if exists
 DROP TABLE IF EXISTS emp;
+-- drop dept table if exists
 DROP TABLE IF EXISTS dept;
+-- create emp table if not exists
 CREATE TABLE IF NOT EXISTS emp(EMPNO INT,ENAME STRING,JOB STRING,MGR STRING,HIREDATE DATE,SAL INT,COMM STRING,DEPTNO INT);
+-- create dept table if not exists
 CREATE TABLE IF NOT EXISTS dept( Deptno INT, Dname STRING, Loc STRING);
+-- insert data into emp table
 INSERT INTO emp VALUES (7369,'SMITH','CLERK',7902,'1980-10-12',800,NULL,20),
 (7499,'ALLEN','SALESMAN',7698,'1981-10-02',1600,300,30),
 (7521,'WARD','SALESMAN',7698,'1981-12-02',1250,500,30),
@@ -17,7 +31,10 @@ INSERT INTO emp VALUES (7369,'SMITH','CLERK',7902,'1980-10-12',800,NULL,20),
 (7902,'FORD','ANALYST',7566,'1981-03-12',3000,NULL,20),
 (7934,'MILLER','CLERK',7782,'1982-03-01',1300,NULL,10),
 (1234,'SEKHAR','doctor',7777,NULL,667,78,50);
+-- insert data into dept table
 INSERT INTO DEPT VALUES (10,'ACCOUNTING','NEW YORK'),
 (20,'RESEARCH','DALLAS'),
 (30,'SALES','CHICAGO'),
 (40,'OPERATIONS','BOSTON');
+
+
